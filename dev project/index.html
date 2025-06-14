@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>GPA CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    </head>
+    <body>
+        <div class="container-1">
+        <header id="main header">
+            <h1>GPA CALCULATOR</h1>
+        </header>
+    </div>
+        <div class="container-2">
+        <form>
+            <div class="name">
+                <div id="error1">
+                    <p style="color: red; font-size: 10px; font-family: Arial, Helvetica, sans-serif">*Required</p>
+                </div>
+            <label>NAME:</label>
+            <input id="nameip" type="text" name="name" placeholder="Enter your name">
+        
+            </div>
+            <div class="sapid">
+                <div id="error2">
+                    <p style="color: red; font-size: 10px; font-family: Arial, Helvetica, sans-serif">*Required</p>
+                </div>
+            <label>SAP ID:  </label>
+            <input id="sapidip"type="number" name="sapid" placeholder="Enter your SAP ID">
+            </div>
+            <button type="button" id="next1">Next</button>
+            <div id="branch">
+                <div id="error3">
+                    <p style="color: red; font-size: 10px; font-family: Arial, Helvetica, sans-serif">*Required</p>
+                </div>
+            <label>BRANCH:  </label>
+            <select id="branchip" name="Branch">
+                <option value="select">Select</option>
+                <option value="CS">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="CSEDS">Computer Science and Engineering(Data Science)</option>
+                <option value="AIML">Artificial Intelligence and Machine Learning</option>
+                <option value="AIDS">Artificial Intelligence and Data Science</option>
+                <option value="ICB">Computer Science and Engineering
+                    (IOT and Cyber Security with Block Chain Technology)</option>
+                <option value="EXTC">Electronics and Telecommunication Engineering</option>
+                <option value="MECH">Mechanical Engineering</option>
+            </select>
+        </div>
+        <button type="button" id="next2">Next</button>
+            <div id="sem">
+                <div id="error4">
+                    <p style="color: red; font-size: 10px; font-family: Arial, Helvetica, sans-serif">*Required</p>
+                </div>
+            <label>SEMESTER:  </label>
+            <select id="semip"name="year">
+                <option value="select">Select</option>
+                <option value="1st">1st sem</option>
+                <option value="2nd">2nd sem</option>
+                <option value="3rd">3rd sem</option>
+                <option value="4th">4th sem</option>
+                <option value="5th">5th sem</option>
+                <option value="6th">6th sem</option>
+                <option value="7th">7th sem</option>
+                <option value="8th">8th sem</option>
+            </select>
+            </div>
+            <button type="button" id="next3">Next</button>
+            <container-3>
+            <div id="mks">
+                <div id="error5">
+                    <p style="color: red; font-size: 10px; font-family: Arial, Helvetica, sans-serif">*Required</p>
+                </div>
+            
+                <div class="subject-field">
+                    <label>MARKS IN SUBJECT A(3 credits):  </label>
+                    <input id="mk1ip"type="number" name="marks" placeholder="Enter Marks">
+                </div>
+            
+                <div class="subject-field">
+                    <label>MARKS IN SUBJECT B(2 credits):  </label>
+                    <input id="mk2ip"type="number" name="marks" placeholder="Enter Marks">
+                </div>
+            
+                <div class="subject-field">
+                    <label>MARKS IN SUBJECT C(1 credit): </label>
+                    <input id="mk3ip"type="number" name="marks" placeholder="Enter Marks">
+                </div>
+            </div>
+            </container-3>
+            
+
+            <button id="submitbtn" type="button">Submit</button>
+        </form>
+
+    </div>
+    <h2 id="gpaop">Your calculated GPA is <span id="gpaval"></span></h2>
+    <script src="main.js"></script>
+    </body>
+    </html>
+        
